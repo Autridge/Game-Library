@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,7 +25,7 @@
     <!-- holds the two sections of the page  -->
     <div class="flex">
       <!-- sidebar section  -->
-      <section class="w-1/5 p-8 border-r-2 border-r-gray-400">
+      <section class="w-1/5 p-8 border-r-2 border-r-gray-100">
         <!-- profile  -->
         <div class="flex gap-2 mb-10">
           <img src="images/test-1.png" alt="man-profile" />
@@ -45,19 +49,85 @@
           </div>
         </div>
         <!-- navigation bar  -->
-        <div>
-          <ul>
-            <li><i class="fi fi-rr-house-blank"></i>Home</li>
-            <li><i class="fi fi-rr-basket-shopping-minus"></i>Store</li>
-            <li><i class="fi fi-sc-gamepad"></i> My games</li>
-            <li>Achievements</li>
-            <li>Friends</li>
-            <li>Activity Log</li>
+        <div class="p-4 flex flex-col justify-between h-[68vh]">
+          <ul class="flex flex-col gap-6 text-gray-500">
+            <li class="flex items-center">
+              <i class="fi fi-rr-house-blank pr-2"></i>Home
+            </li>
+            <li class="flex items-center">
+              <i class="fi fi-rr-basket-shopping-minus pr-2"></i>Store
+            </li>
+            <li class="flex items-center">
+              <i class="fi fi-sr-console-controller pr-2"></i>My games
+            </li>
+            <li class="flex items-center">
+              <i class="fi fi-rr-trophy pr-2"></i>Achievements
+            </li>
+            <li class="flex items-center">
+              <i class="fi fi-rr-users pr-2"></i>Friends
+            </li>
+            <li class="flex items-center">
+              <i class="fi fi-rr-circle-waveform-lines pr-2"></i>Activity Log
+            </li>
+          </ul>
+          <ul class="flex flex-col gap-6 text-gray-500">
+            <li class="flex items-center">
+              <i class="fi fi-rr-settings pr-2"></i>Settings
+            </li>
+            <li class="flex items-center">
+              <i class="fi fi-rr-sign-out-alt pr-2"></i>Logout
+            </li>
           </ul>
         </div>
       </section>
       <!-- main section  -->
-      <section class="bg-blue-300 w-4/5 h-full">main-section</section>
+      <section class="w-4/5 h-screen p-10">
+        <!-- header  -->
+        <div class="flex items-center justify-between">
+          <h1 class="font-bold text-3xl">Game Library</h1>
+          <div class="flex items-center gap-4">
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Search"
+                class="w-full py-2 pl-10 pr-4 text-gray-700 border rounded-full bg-white border-gray-300 outline-none"
+              />
+              <div class="absolute inset-y-0 left-0 flex pl-4 items-center">
+                <i class="fi fi-rr-search text-sm text-gray-500"></i>
+              </div>
+            </div>
+            <div
+              class="bg-white border rounded-full border-gray-300 size-12 flex items-center justify-center"
+            >
+              <div class="relative">
+                <i class="fi fi-sr-bell text-xl"></i>
+                <span
+                  class="absolute bg-red-500 size-2 rounded-full -right-1 -top-0.5"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Games Grid  -->
+        <div class="grid grid-cols-3 grid-rows-2 place-items-center">
+          <!-- Individual Cards  -->
+          <div class="bg-white shadow-2xl rounded-2xl px-8 py-5">
+            <div class="flex justify-between items-center">
+              <h1 class="text-lg font-bold">Kirby</h1>
+              <div
+                class="size-8 bg-gray-100 rounded-full flex items-center justify-center"
+              >
+                <i class="fi fi-rr-arrow-up-right font-bold text-[.7rem]"></i>
+              </div>
+            </div>
+            <div
+              class="size-60 rounded-full flex items-center justify-center bg-[radial-gradient(circle_at_center,_rgba(255,255,255,1)_20%,_rgba(240,240,245,0.8)_50%,_transparent_100%)]"
+            >
+              <img src="images/kirby.png" alt="kirby" class="size-40" />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>

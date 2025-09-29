@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Game-library</title>
+  </head>
+  <body class="bg-[#fdfdfd]">
+    <!-- holds the two sections of the page  -->
+    <div class="flex">
+      <!-- sidebar section  -->
+      <section class="w-1/5 p-8 border-r-2 border-r-gray-400">
+        <!-- profile  -->
+        <div class="flex gap-2 mb-10">
+          <img src="images/test-1.png" alt="man-profile" />
+          <div>
+            <h1 class="font-bold text-xl text-gray-900">Esther H.</h1>
+            <p class="text-sm text-gray-400">@ehoward</p>
+          </div>
+        </div>
+        <!-- sub-profile  -->
+        <div class="py-5 border-y-2 border-y-gray-200 border-dashed">
+          <div
+            class="flex items-center justify-between p-3 rounded-full bg-gray-100"
+          >
+            <p>
+              <i class="fi fi-sr-cursor-plus text-blue-600 pr-1.5"></i
+              ><span class="font-bold">647</span>.00
+            </p>
+            <div class="bg-blue-100 rounded-full w-8 p-1 flex">
+              <i class="fi fi-sr-plus-small text-blue-600 m-auto"></i>
+            </div>
+          </div>
+        </div>
+        <!-- navigation bar  -->
+        <div>
+          <ul>
+            <li><i class="fi fi-rr-house-blank"></i>Home</li>
+            <li><i class="fi fi-rr-basket-shopping-minus"></i>Store</li>
+            <li><i class="fi fi-sc-gamepad"></i> My games</li>
+            <li>Achievements</li>
+            <li>Friends</li>
+            <li>Activity Log</li>
+          </ul>
+        </div>
+      </section>
+      <!-- main section  -->
+      <section class="bg-blue-300 w-4/5 h-full">main-section</section>
+    </div>
+  </body>
+</html>

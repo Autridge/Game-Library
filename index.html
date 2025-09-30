@@ -49,39 +49,43 @@
           </div>
         </div>
         <!-- navigation bar  -->
-        <div class="p-4 flex flex-col justify-between h-[68vh]">
+        <div class="p-4 flex flex-col justify-between h-[68vh] font-semibold">
           <ul class="flex flex-col gap-6 text-gray-500">
-            <li class="flex items-center">
+            <li
+              class="flex items-center transition-all hover:tracking-widest cursor-pointer"
+            >
               <i class="fi fi-rr-house-blank pr-2"></i>Home
             </li>
-            <li class="flex items-center">
+            <li class="flex items-center hover:tracking-widest cursor-pointer">
               <i class="fi fi-rr-basket-shopping-minus pr-2"></i>Store
             </li>
-            <li class="flex items-center">
+            <li
+              class="flex items-center text-blue-400 hover:tracking-widest cursor-pointer"
+            >
               <i class="fi fi-sr-console-controller pr-2"></i>My games
             </li>
-            <li class="flex items-center">
+            <li class="flex items-center hover:tracking-widest cursor-pointer">
               <i class="fi fi-rr-trophy pr-2"></i>Achievements
             </li>
-            <li class="flex items-center">
+            <li class="flex items-center hover:tracking-widest cursor-pointer">
               <i class="fi fi-rr-users pr-2"></i>Friends
             </li>
-            <li class="flex items-center">
+            <li class="flex items-center hover:tracking-widest cursor-pointer">
               <i class="fi fi-rr-circle-waveform-lines pr-2"></i>Activity Log
             </li>
           </ul>
           <ul class="flex flex-col gap-6 text-gray-500">
-            <li class="flex items-center">
+            <li class="flex items-center hover:tracking-widest cursor-pointer">
               <i class="fi fi-rr-settings pr-2"></i>Settings
             </li>
-            <li class="flex items-center">
+            <li class="flex items-center hover:tracking-widest cursor-pointer">
               <i class="fi fi-rr-sign-out-alt pr-2"></i>Logout
             </li>
           </ul>
         </div>
       </section>
       <!-- main section  -->
-      <section class="w-4/5 h-screen p-10">
+      <section class="w-4/5 h-screen pt-6 px-5">
         <!-- header  -->
         <div class="flex items-center justify-between">
           <h1 class="font-bold text-3xl">Game Library</h1>
@@ -109,9 +113,9 @@
           </div>
         </div>
         <!-- Games Grid  -->
-        <div class="grid grid-cols-3 grid-rows-2 place-items-center">
+        <div class="grid grid-cols-3 gap-4 mt-6">
           <!-- Individual Cards  -->
-          <div class="bg-white shadow-xl rounded-2xl px-8 py-5">
+          <div class="bg-white shadow-2xl rounded-lg px-8 py-5">
             <!-- title and link  -->
             <div class="flex justify-between items-center">
               <h1 class="text-lg font-bold">Kirby</h1>
@@ -122,10 +126,12 @@
               </div>
             </div>
             <!-- middle eclipse with game image  -->
-            <div
-              class="size-60 rounded-full flex items-center justify-center bg-[radial-gradient(circle_at_center,_rgba(255,255,255,1)_20%,_rgba(240,240,245,0.8)_50%,_transparent_100%)]"
-            >
-              <img src="images/kirby.png" alt="kirby" class="size-40" />
+            <div class="flex items-center justify-center">
+              <div
+                class="size-60 rounded-full flex items-center justify-center bg-[radial-gradient(circle_at_center,_rgba(255,255,255,1)_20%,_rgba(240,240,245,0.8)_50%,_transparent_100%)]"
+              >
+                <img src="images/kirby.png" alt="kirby" class="size-40" />
+              </div>
             </div>
             <!-- footer  -->
             <div class="flex items-baseline justify-between">
@@ -147,6 +153,196 @@
               <p class="text-sm text-gray-400">
                 <i class="fi fi-sr-star mr-1"></i>4.5
               </p>
+            </div>
+          </div>
+
+          <!-- card--2  -->
+          <div class="bg-white shadow-2xl rounded-lg px-8 py-5">
+            <!-- title and link  -->
+            <div class="flex justify-between items-center">
+              <h1 class="text-lg font-bold">Minecraft</h1>
+              <div
+                class="size-8 bg-gray-100 rounded-full flex items-center justify-center"
+              >
+                <i class="fi fi-rr-arrow-up-right font-bold text-[.7rem]"></i>
+              </div>
+            </div>
+            <!-- middle eclipse with game image  -->
+            <div class="flex items-center justify-center">
+              <div
+                class="size-60 rounded-full flex items-center justify-center bg-[radial-gradient(circle_at_center,_rgba(255,255,255,1)_20%,_rgba(240,240,245,0.8)_50%,_transparent_100%)]"
+              >
+                <img
+                  src="images/minecraft.png"
+                  alt="minecraft"
+                  class="size-40"
+                />
+              </div>
+            </div>
+            <!-- footer  -->
+            <div class="flex items-baseline justify-between">
+              <div class="flex relative mt-2">
+                <img
+                  src="images/test-1.png"
+                  alt="lady picture"
+                  class="size-8 border-2 rounded-full border-white"
+                />
+                <img
+                  src="images/test-3.png"
+                  alt="lady picture"
+                  class="size-8 absolute left-7 border-2 rounded-full border-white"
+                />
+                <img
+                  src="images/test-2.png"
+                  alt="lady picture"
+                  class="size-8 absolute left-14 border-2 rounded-full border-white"
+                />
+                <p class="pl-15 text-sm">
+                  <span class="font-bold">Ivan</span> and 2+<br />playing now
+                </p>
+              </div>
+              <p class="text-sm text-gray-400">
+                <i class="fi fi-sr-star mr-1"></i>4.9
+              </p>
+            </div>
+          </div>
+
+          <!-- card--3  -->
+          <div class="bg-white shadow-2xl rounded-lg px-8 py-5">
+            <!-- title and link  -->
+            <div class="flex justify-between items-center">
+              <h1 class="text-lg font-bold">Mario</h1>
+              <div
+                class="size-8 bg-gray-100 rounded-full flex items-center justify-center"
+              >
+                <i class="fi fi-rr-arrow-up-right font-bold text-[.7rem]"></i>
+              </div>
+            </div>
+            <!-- middle eclipse with game image  -->
+            <div class="flex items-center justify-center">
+              <div
+                class="size-60 rounded-full flex items-center justify-center bg-[radial-gradient(circle_at_center,_rgba(255,255,255,1)_20%,_rgba(240,240,245,0.8)_50%,_transparent_100%)]"
+              >
+                <img src="images/mario.png" alt="kirby" class="size-38" />
+              </div>
+            </div>
+            <!-- footer  -->
+            <div class="flex items-baseline justify-between">
+              <div class="flex relative mt-2">
+                <img
+                  src="images/test-2.png"
+                  alt="lady picture"
+                  class="size-9 border-2 rounded-full border-white"
+                />
+
+                <p class="pl-3 text-sm">
+                  <span class="font-bold">Alex O.</span> is<br />
+                  playing now
+                </p>
+              </div>
+              <p class="text-sm text-gray-400">
+                <i class="fi fi-sr-star mr-1"></i>4.5
+              </p>
+            </div>
+          </div>
+
+          <!-- card--4  -->
+          <div class="bg-white shadow-2xl rounded-lg px-8 py-5">
+            <!-- title and link  -->
+            <div class="flex justify-between items-center">
+              <h1 class="text-lg font-bold">Sonic</h1>
+              <div
+                class="size-8 bg-gray-100 rounded-full flex items-center justify-center"
+              >
+                <i class="fi fi-rr-arrow-up-right font-bold text-[.7rem]"></i>
+              </div>
+            </div>
+            <!-- middle eclipse with game image  -->
+            <div class="flex items-center justify-center">
+              <div
+                class="size-60 rounded-full flex items-center justify-center bg-[radial-gradient(circle_at_center,_rgba(255,255,255,1)_20%,_rgba(240,240,245,0.8)_50%,_transparent_100%)]"
+              >
+                <img src="images/sonic.png" alt="kirby" class="size-38" />
+              </div>
+            </div>
+            <!-- footer  -->
+            <div class="flex items-baseline justify-between">
+              <div class="flex relative mt-2">
+                <img
+                  src="images/test-2.png"
+                  alt="lady picture"
+                  class="size-9 border-2 rounded-full border-white"
+                />
+
+                <p class="pl-3 text-sm">
+                  <span class="font-bold">Alex O.</span> is<br />
+                  playing now
+                </p>
+              </div>
+              <p class="text-sm text-gray-400">
+                <i class="fi fi-sr-star mr-1"></i>4.5
+              </p>
+            </div>
+          </div>
+
+          <!-- card--5  -->
+          <div class="bg-white shadow-2xl rounded-lg px-8 py-5">
+            <!-- title and link  -->
+            <div class="flex justify-between items-center">
+              <h1 class="text-lg font-bold">Pokemon Go</h1>
+              <div
+                class="size-8 bg-gray-100 rounded-full flex items-center justify-center"
+              >
+                <i class="fi fi-rr-arrow-up-right font-bold text-[.7rem]"></i>
+              </div>
+            </div>
+            <!-- middle eclipse with game image  -->
+            <div class="flex items-center justify-center">
+              <div
+                class="size-60 rounded-full flex items-center justify-center bg-[radial-gradient(circle_at_center,_rgba(255,255,255,1)_20%,_rgba(240,240,245,0.8)_50%,_transparent_100%)]"
+              >
+                <img src="images/Pokemon.png" alt="minecraft" class="size-40" />
+              </div>
+            </div>
+            <!-- footer  -->
+            <div class="flex items-baseline justify-between">
+              <div class="flex relative mt-2">
+                <img
+                  src="images/test-1.png"
+                  alt="lady picture"
+                  class="size-8 border-2 rounded-full border-white"
+                />
+                <img
+                  src="images/test-3.png"
+                  alt="lady picture"
+                  class="size-8 absolute left-7 border-2 rounded-full border-white"
+                />
+                <img
+                  src="images/test-2.png"
+                  alt="lady picture"
+                  class="size-8 absolute left-14 border-2 rounded-full border-white"
+                />
+                <p class="pl-15 text-sm">
+                  <span class="font-bold">Ivan</span> and 2+<br />playing now
+                </p>
+              </div>
+              <p class="text-sm text-gray-400">
+                <i class="fi fi-sr-star mr-1"></i>4.9
+              </p>
+            </div>
+          </div>
+
+          <!-- Add new card  -->
+          <div
+            class="flex flex-col justify-center items-center bg-white border-dashed border-2 border-blue-400 rounded-lg px-8 py-5 gap-6"
+          >
+            <div
+              class="border border-blue-400 rounded-full size-10 flex items-center justify-center"
+            >
+              <i class="fi fi-sr-plus-small text-blue-600 text-2xl"></i>
+            </div>
+            <div>
+              <h1 class="text-blue-400">Discover New Game</h1>
             </div>
           </div>
         </div>
